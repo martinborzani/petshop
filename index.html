@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Laika</title>
+    <link rel="shortcut icon" href="assets/img/laika logo.jpg" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <img src="assets/img/laika logo.jpg" class="animate__animated animate__bounce animate__bounceInDown" alt="logo empresa">
+    </header>
+    <main class="container">
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-center w-100" id="diseño_nav">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse pt-3 " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" id="action" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./farmacia.html">Farmacia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./juguetes.html">Juguetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Acceder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carrito.html">Carrito de Compras <i class="bi bi-bag-heart"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <h2 class="titulo_home">¡Bienvenido!</h2>
+
+        <!-- ---------- carrousel------------->
+        <section>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/fotoCarrousel1.jpg" class="d-block w-100" style="height:25rem ; width: 80rem;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fotoCarrousel2.jpg" class="d-block w-100" style="height:25rem ; width: 80rem;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fotoCarrousel3.jpg" class="d-block w-100" style="height:25rem ; width: 80rem;" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------Nosotros----------- -->
+        <section class="d-flex contenedorInfo flex-wrap gap-3 ">
+            <div class="d-flex flex-column information" style="width: 30%;">
+                <div class="info-foto">
+                    <img src="assets/img/gatoLogo.jpeg" class="img-fluid" alt="">
+                </div>
+                <h2 class="titulo-informacion align-text-center nosTitulo">Nosotros</h2>
+                <p><strong>LAIKA</strong> "es una empresa dedicada al cuidado de las mascotas, que lleva en el mercado desde el año 2006, trabajando en pro del bienestar de cada mascota"</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#info" class="pata"> <img src="./assets/img/pata.jpeg" class="w-100" alt=""></a>
+                </div>
+            </div>
+            <div class=" d-flex flex-column information " style="width: 30%;">
+                <div class="info-foto d-flex justify-content-center">
+                    <img src="assets/img/docLogoPrueba" class="w-100" alt="">
+                </div>
+                <h2 class="titulo-informacion sevTitulo">Servicios</h2>
+                <p>Ofrecemos todo tipo de servicios especializados y de la mejor calidad, siempre pensando en la salud y el bienestar de las mascota y en la tranquilidad de nuestros usuarios.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="./farmacia.html" class="pata1"> <img src="./assets/img/pata1.jpeg" class="w-100" alt=""></a>
+                </div>
+
+            </div>
+            <div class=" d-flex  flex-column information" style="width: 30%;">
+                <div class="info-foto">
+                    <img src="assets/img/perroLogo.jpeg" alt="">
+                </div>
+                <h2 class="titulo-informacion align-text-center petTitulo">PetShop</h2>
+                <p>En nuestra tienda para mascotas, encontrarás todo tipo de accesorios y utilidades que te podrán facilitar la vida con tu mascota y a su vez mejorar su salud y estado de ánimo.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="./juguetes.html" class="pata2"><img src="./assets/img/pata2.jpeg" class="w-100" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <div id="app">
+            <section class="d-flex justify-content-center border-0 flex-wrap gap-1" style="margin-top: 1rem;">
+                <h2 class="w-100 " style="text-align: center;">Productos mas solicitados</h2>
+                <hr>
+                <div v-for="card of pocoStock ">
+                    <div class="card mb-3 " style="max-width: 540px; ">
+                        <div class="row g-0 ">
+                            <div class="col-md-4 ">
+                                <img :src="card.imagen " class="img-fluid rounded-start h-100 " alt="... ">
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card-body">
+                                    <h5 class="card-title ">{{card.nombre}}</h5>
+
+                                    <p class="card-text "><small class="text-muted ">cantidad disponible: {{card.stock}}</small></p>
+                                    <a :href="'./detalle.html?id=' + card._id" class="boton_compra text-decoration-none p-2 card-link rounded-2 "> ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-for="card of muchoStock ">
+                    <div class="card mb-3 " style="max-width: 540px; ">
+                        <div class="row g-0 ">
+                            <div class="col-md-8 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">{{card.nombre}}</h5>
+
+                                    <p class="card-text "><small class="text-muted ">cantidad disponible: {{card.stock}}</small></p>
+                                    <a :href="'./detalle.html?id=' + card._id" class="boton_compra text-decoration-none p-2 card-link rounded-2 "> ver mas</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <img :src="card.imagen " class="img-fluid rounded-start h-100 " alt="... ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="info">
+                <div class="Solicitar turno">
+                    <div class="Turnos">
+                        <a href="./contacto.html"><img src="" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- aca comienza alto footer paa -->
+    <footer>
+        <div class="container__footer ">
+            <div class="box__footer ">
+                <div class="logo ">
+                    <img src="./assets/img/laika logo.jpg " alt=" ">
+                </div>
+                <div class="terms ">
+                    <p>En LAIKA creemos que para cumplir con nuestra mision, necesitamos tener un estilo propio de realizar negocios y eso se refleja en nuestros Valores Corporativos.
+                    </p>
+                </div>
+            </div>
+            <div class="box__footer ">
+                <h2>Que vendemos</h2>
+                <a href="https://www.google.com ">Juguetes</a>
+                <a href="# ">Mascotas</a>
+                <a href="# ">Veterinaria</a>
+                <a href="# ">Remedios</a>
+            </div>
+
+            <div class="box__footer ">
+                <h2>Quienes Somos </h2>
+                <a href="# ">Acerca de</a>
+                <a href="# ">Trabajos</a>
+                <a href="# ">Procesos</a>
+                <a href="# ">Servicios</a>
+            </div>
+
+            <div class="box__footer ">
+                <h2>Redes Sociales</h2>
+                <a target="_blank" href="https://www.facebook.com/ "> <i class="fab fa-facebook-square "></i> Facebook</a>
+                <a target="_blank" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D "><i class="fab fa-twitter-square "></i> Twitter</a>
+                <a target="_blank" href="https://ar.linkedin.com/ "><i class="fab fa-linkedin "></i> Linkedin</a>
+                <a target="_blank" href="https://www.instagram.com/serghio_96/ "><i class="fab fa-instagram-square "></i> Instagram</a>
+            </div>
+            <iframe class="map " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5850.891868964687!2d-58.43442728909354!3d-34.611692511693455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1663383731909!5m2!1ses-419!2sar "
+                width="500 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+        </div>
+        <div class="box__copyright ">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b><a style="text-decoration: none;" href="mailto:petshopLaika@gmail.com">petshopLaika@gmail.com</a></b></p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8 " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js "></script>
+    <script src="assets/js/index.js "></script>
+</body>
+
+</html>
+
+</html>

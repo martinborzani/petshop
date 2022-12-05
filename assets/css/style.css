@@ -1,0 +1,625 @@
+                @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+                * {
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                
+                 :root {
+                    --white-light: rgba(255, 255, 255, 0.5);
+                    --alice-blue: #f8f9fa;
+                    --carribean-green: #40c9a2;
+                    --gray: #ededed;
+                }
+                
+                body {
+                    background-color: #F5F5F5;
+                    font-family: 'Quicksand', sans-serif;
+                }
+                
+                #action {
+                    color: #702496;
+                }
+                
+                .colorPredeterminado {
+                    color: #702496;
+                }
+                /*  ------------------------- HEADER HOME ----------------------------------- */
+                
+                header {
+                    background-image: url(/assets/img/header_pastor_aleman.jpg);
+                    height: 55vh;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 20%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                
+                header h1 {
+                    font-size: 5rem;
+                    color: #702496;
+                }
+                
+                header img {
+                    height: 200px;
+                    border-radius: 1rem;
+                }
+                
+                .titulo_home {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                    color: #702496;
+                }
+                /* ------------------------- nav ----------------------------------- */
+                
+                #diseño_nav {
+                    color: #702496 !important;
+                }
+                
+                nav a {
+                    transition: all 400ms ease;
+                    border-radius: 4px;
+                }
+                
+                nav a:hover {
+                    background: #70249675;
+                    color: #fff;
+                }
+                /* ------------------------- main ----------------------------------- */
+                
+                main {
+                    min-height: 25vh;
+                }
+                /*------------------HOME------------------------*/
+                
+                .information {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 1rem;
+                    padding-top: 1.3rem;
+                }
+                
+                .information img {
+                    height: 7rem;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .information a {
+                    width: 5rem;
+                    height: 5rem;
+                }
+                
+                .nosTitulo {
+                    font-family: 'Parisienne', cursive;
+                    color: #009f00;
+                }
+                
+                .sevTitulo {
+                    font-family: 'Parisienne', cursive;
+                    color: #0476d9;
+                }
+                
+                .petTitulo {
+                    font-family: 'Parisienne', cursive;
+                    color: #e96a00;
+                }
+                
+                .descrition {
+                    height: 9rem;
+                }
+                /* --- BUSQUEDA --- */
+                
+                .formulario_busqueda {
+                    border: 1px solid red;
+                    width: 30rem;
+                    padding: 0.7rem;
+                    border: 2px solid #702496;
+                    border-radius: 1rem;
+                }
+                /*Cards*/
+                /* ----------------cartitas goodd-------------- */
+                
+                .img-card {
+                    width: 90%;
+                    display: block;
+                }
+                
+                .container {
+                    width: 88vw;
+                    margin: 0 auto;
+                }
+                
+                .lg-title,
+                .md-title,
+                .sm-title {
+                    font-family: 'Roboto', sans-serif;
+                    padding: 0.6rem 0;
+                    text-transform: capitalize;
+                }
+                
+                .lg-title {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 1.3rem 0;
+                    opacity: 0.9;
+                }
+                
+                .md-title {
+                    font-size: 2rem;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                .sm-title {
+                    font-weight: 300;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+                
+                .text-light {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    opacity: 0.5;
+                    margin: 0.4rem 0;
+                }
+                /* product section */
+                
+                .products {
+                    background: var(--alice-blue);
+                    padding: 3.2rem 0;
+                }
+                
+                .products .text-light {
+                    text-align: center;
+                    width: 70%;
+                    margin: 0.9rem auto;
+                }
+                
+                .product {
+                    margin: 2rem;
+                    position: relative;
+                }
+                
+                .product-content {
+                    background: var(--gray);
+                    padding: 3rem 0.5rem 2rem 0.5rem;
+                    cursor: pointer;
+                }
+                
+                .product-img {
+                    background: var(--white-light);
+                    box-shadow: 0 0 20px 10px var(--white-light);
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    transition: background 0.5s ease;
+                }
+                
+                .product-btns {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1.4rem;
+                    opacity: 0;
+                    transition: opacity 0.6s ease;
+                }
+                
+                .btn-cart,
+                .btn-buy {
+                    background: transparent;
+                    border: 1px solid black;
+                    padding: 0.8rem 0;
+                    width: 125px;
+                    font-family: inherit;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    border: none;
+                    transition: all 0.6s ease;
+                }
+                
+                .btn-cart {
+                    background: black;
+                    color: white;
+                }
+                
+                .btn-cart:hover {
+                    background: var(--carribean-green);
+                }
+                
+                .btn-buy {
+                    background: white;
+                }
+                
+                .btn-buy:hover {
+                    background: var(--carribean-green);
+                    color: #fff;
+                }
+                
+                .product-info {
+                    background: white;
+                    padding: 2rem;
+                }
+                
+                .product-info-top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .rating span {
+                    color: var(--carribean-green);
+                }
+                
+                .product-name {
+                    color: black;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                
+                .product-price {
+                    padding-top: 0.6rem;
+                    padding-right: 0.6rem;
+                    display: inline-block;
+                }
+                
+                .product-price:first-of-type {
+                    color: var(--carribean-green);
+                }
+                
+                .product-img img {
+                    transition: transform 0.6s ease;
+                    -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+                }
+                
+                .product:hover .product-img img {
+                    transform: scale(1.1);
+                }
+                
+                .product:hover .product-img {
+                    background: var(--carribean-green);
+                }
+                
+                .product:hover .product-btns {
+                    opacity: 1;
+                }
+                
+                .off-info .sm-title {
+                    background: var(--carribean-green);
+                    color: white;
+                    display: inline-block;
+                    padding: 0.5rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+                    z-index: 1;
+                    letter-spacing: 3px;
+                    cursor: pointer;
+                }
+                /* ------------------------- Contacto ----------------------------------- */
+                
+                .contact {
+                    height: 75%;
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .contact__image-wrapper {
+                    height: 100%;
+                    width: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .contact__image {
+                    width: 70%;
+                }
+                
+                .contact__right-side {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 0 7.3% 0 4.7%;
+                    width: 50%;
+                }
+                
+                .contact__title {
+                    font-family: 'Bellefair', serif;
+                    font-weight: 400;
+                    margin-bottom: 70px;
+                    text-transform: uppercase;
+                }
+                
+                .contact__form-wrapper,
+                .contact__input-line {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                
+                .contact__input-line {
+                    margin-bottom: 45px;
+                }
+                
+                .contact__label {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                
+                .contact__input {
+                    height: 30px;
+                    outline: none;
+                    padding: 5px 0;
+                    border-bottom: 2px solid #121212;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    width: 100%;
+                    color: #121212;
+                    background-color: transparent;
+                }
+                
+                .contact__input--textarea {
+                    height: 100px;
+                    outline: none;
+                    padding: 5px 0;
+                    border-bottom: 2px solid #121212;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    width: 100%;
+                    color: #121212;
+                    resize: none;
+                    background-color: transparent;
+                }
+                
+                .contact__submit-button {
+                    padding: 18px 55px;
+                    background-color: #121212;
+                    border-radius: 50px;
+                    color: #f2f2f2;
+                    font-weight: 600;
+                    border: none;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                
+                .contact__submit-button:hover {
+                    background-color: #2e2e2e;
+                }
+                /* ------------------------- registro ----------------------------------- */
+                
+                .registroCompleto {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .formRegistro {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 3rem;
+                    border: solid black 1px;
+                    background-color: white;
+                    box-shadow: 3px 3px 3px grey;
+                    width: 50%;
+                    padding: 1rem;
+                    gap: 2.5rem;
+                    border-radius: 0.5rem;
+                }
+                
+                .label {
+                    font-weight: bolder;
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                }
+                
+                .input {
+                    border-radius: 5px;
+                    width: 100%;
+                    text-indent: 0.5rem;
+                }
+                
+                .boton {
+                    box-shadow: 3px 3px 3px grey;
+                }
+                
+                @media only screen and (min-width:320px) and (max-width:768px) {
+                    .container-card {
+                        flex-wrap: wrap;
+                    }
+                    .card {
+                        margin: 15px;
+                    }
+                }
+                /*  ------------------------- Farmacia ----------------------------------- */
+                /* ------------------detalles--------- */
+                
+                .container-detalle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                /*Fin-Cards*/
+                /* ------------------------- footer ----------------------------------- */
+                
+                footer {
+                    width: 100%;
+                    padding: 1px 0px;
+                    background-image: url(/assets/img/background-footer.svg);
+                    background-size: cover;
+                }
+                
+                .container__footer {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    max-width: 1060px;
+                    margin: auto;
+                    margin-top: 100px;
+                }
+                
+                .box__footer {
+                    display: flex;
+                    padding: 20px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .map {
+                    border-radius: 30px;
+                }
+                
+                .box__footer .logo img {
+                    width: 180px;
+                }
+                
+                .box__footer .terms {
+                    max-width: 350px;
+                    margin-top: 20px;
+                    font-weight: 500;
+                    color: white;
+                    font-size: 18px;
+                }
+                
+                .box__footer h2 {
+                    margin-bottom: 30px;
+                    color: white;
+                    font-weight: 700;
+                }
+                
+                .box__footer a {
+                    margin-top: 10px;
+                    color: white;
+                    font-weight: 600;
+                }
+                
+                .box__footer a:hover {
+                    opacity: 0.8;
+                }
+                
+                .box__footer a .fab {
+                    font-size: 20px;
+                }
+                
+                .box__copyright {
+                    max-width: 1200px;
+                    margin: auto;
+                    text-align: center;
+                    padding: 0px 40px;
+                }
+                
+                .box__copyright p {
+                    margin-top: 20px;
+                    color: white;
+                }
+                
+                .box__copyright hr {
+                    border: none;
+                    height: 1px;
+                    background-color: #7a7a7a;
+                }
+                /* ---- MEDIAQUERIES ---- */
+                
+                @media (max-width:768px) {
+                    .card {
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                }
+                
+                @media (max-width:425px) {
+                    map {
+                        width: 100%;
+                        margin: 20px
+                    }
+                    .container__footer {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        max-width: 1060px;
+                        margin: auto;
+                        margin-top: 100px;
+                    }
+                    .contact {
+                        flex-direction: column;
+                    }
+                    .contact img {
+                        width: 10rem;
+                    }
+                    .contact__right-side {
+                        margin-top: 2rem;
+                    }
+                    .contInformation {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                
+                @media screen and (min-width: 992px) {
+                    .product-items {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .product-col-r-bottom {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media screen and (min-width: 1200px) {
+                        .product-items {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        .product {
+                            margin-right: 1rem;
+                            margin-left: 1rem;
+                        }
+                        .products .text-light {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and (min-width: 1336px) {
+                        .product-items {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                        .product-collection-wrapper {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        .flex {
+                            height: 60vh;
+                        }
+                        .product-col-left {
+                            height: 121.5vh;
+                        }
+                    }
+                    .letraRojo {
+                        color: red;
+                    }
+                }
